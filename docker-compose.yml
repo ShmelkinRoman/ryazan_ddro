@@ -1,0 +1,96 @@
+networks:
+  ddro_network:
+
+volumes:
+  ddro_pg_data:
+  ddro_static:
+  ddro_redis_data:
+
+services:
+  ddro-postgres:
+    image: postgres:14.13-alpine
+    env_file:
+      - .env
+    environment:
+      #  Создаст бд с такими данными для входа.
+      POSTGRES_USER: ${POSTGRES_USER}
+      POSTGRES_PASSWORD: ${POSTGRES_PASSWORD}
+      POSTGRES_DB: ${POSTGRES_DB}
+    volumes:
+      - ddro_pg_data:/var/lib/postgresql/data
+    networks:
+      - ddro_network
+
+
+  ddro-redis:
+    image: redis:alpine
+    volumes:
+      - ddro_redis_data:/data
+    restart: unless-stopped
+    networks:
+      - ddro_network
+
+
+  ddro-app:
+    build: .
+    # image: notilttoday1/csdn_project:14_03_2025
+    env_file:
+      - .env
+    volumes:
+      - ddro_static:/code/collectedstatic
+    depends_on:
+      - ddro-redis
+    restart: unless-stopped
+    networks:
+      - ddro_network
+
+  ddro-celery:
+    # image: notilttoday1/csdn_project:14_03_2025
+    build: .
+    entrypoint: "/code/celery_starter.sh"
+    depends_on:
+      - ddro-redis
+    restart: unless-stopped
+    networks:
+      - ddro_network
+
+  nginx:
+    image: nginx:1.27
+    # network_mode: host  # Получает доступ ко всем портам хоста.
+    ports:
+      - "80:80"  # Привязать порт контейнера Nginx 80  к порту машины 80.
+    volumes:
+      - ./nginx.conf:/etc/nginx/conf.d/default.conf
+      - ddro_static:/etc/nginx/html/static/
+    restart: unless-stopped
+    networks:
+      - ddro_network
+
+  # prometheus:
+  #   image: prom/prometheus:latest
+  #   volumes:
+  #     - ./prometheus/:/etc/prometheus/
+  #   command:
+  #     - '--config.file=/etc/prometheus/prometheus.yml'
+  #   ports:
+  #     - "9090:9090"
+  #   restart: unless-stopped
+  #   networks:
+  #     - ddro_network
+
+  
+
+  # alertmanager:
+  #   image: prom/alertmanager:latest
+  #   env_file:
+  #     - .env
+  #   environment:
+  #     - TELEGRAM_CHAT_ID=$TELEGRAM_CHAT_ID
+  #     - TELEGRAM_BOT_TOKEN=$TELEGRAM_BOT_TOKEN
+  #   ports:
+  #     - "9093:9093"
+  #   volumes:
+  #     - ./alertmanager/:/etc/alertmanager/
+  #   command:
+  #     - '--config.file=/etc/alertmanager/alertmanager.yml'
+
