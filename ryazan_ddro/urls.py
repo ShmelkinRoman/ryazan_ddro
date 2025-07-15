@@ -17,7 +17,12 @@ Including another URLconf
 from django.contrib import admin
 from django.urls import path, include
 
+from weatherdata_api.swagger import schema_view
+
 urlpatterns = [
     path('ddro/admin/', admin.site.urls),
-    path('ddro/prometheus/', include('prometheus.urls'))
+    path('ddro/prometheus/', include('prometheus.urls')),
+    path('ddro/api/', include('weatherdata_api.urls')),
+    path('ddro/swagger/', schema_view.with_ui('swagger', cache_timeout=0), name='schema-swagger-ui'),
+    path('ddro/redoc/', schema_view.with_ui('redoc', cache_timeout=0), name='schema-redoc'),
 ]
