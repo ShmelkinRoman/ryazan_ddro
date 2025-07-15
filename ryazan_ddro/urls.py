@@ -16,8 +16,10 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path, include
+from .views import task_list_view
 
 urlpatterns = [
     path('ddro/admin/', admin.site.urls),
-    path('ddro/prometheus/', include('prometheus.urls'))
+    path('ddro/prometheus/', include('prometheus.urls')),
+    path('ddro/tasks/', task_list_view, name='task_list'),
 ]

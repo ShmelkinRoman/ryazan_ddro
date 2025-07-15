@@ -1,0 +1,17 @@
+{% extends "admin/base_site.html" %}
+{% load static %}
+
+{% block content %}
+<h1>Запуск задач</h1>
+<ul>
+  {% for key, value in tasks.items %}
+  <li>
+    <form method="post" style="display:inline;">
+      {% csrf_token %}
+      <input type="hidden" name="task" value="{{ key }}">
+      <button type="submit">Исполнить {{ value.0 }}</button>
+    </form>
+  </li>
+  {% endfor %}
+</ul>
+{% endblock %}
