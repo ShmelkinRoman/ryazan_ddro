@@ -1,0 +1,13 @@
+global:
+  resolve_timeout: 5m
+
+route:
+  group_by: ['alertname']
+  receiver: 'telegram'
+
+receivers:
+- name: 'telegram'
+  telegram_configs:
+    - api_url: 'https://api.telegram.org'
+      chat_id: 523724427
+      bot_token: '  7905361102:AAHHljCpnVL54wGOUPuSb-QGaPxl4YM6FLg'

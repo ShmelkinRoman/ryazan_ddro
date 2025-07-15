@@ -1,0 +1,13 @@
+groups:
+  - name: service_alerts
+    group_interval: 1m
+    rules:
+      - alert: ServiceDown
+        resend-delay: 20s
+        expr: health_status{job="eismoinfo_app"} == 0 OR absent(health_status{job="eismoinfo_app"})
+        for: 3s  # Условие выполняется 3 и более сек.
+        labels:
+          severity: critical
+        annotations:
+          summary: "eismoinfo-app is down"
+          description: "The eismoinfo-app has been down for more than 10 seconds."

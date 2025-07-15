@@ -1,0 +1,83 @@
+[
+    {
+        "model": "api_scraper.winddegree",
+        "pk": 1,
+        "fields": {
+            "value_api": "-",
+            "code": null,
+            "description": "Штиль"
+        }
+    },
+    {
+        "model": "api_scraper.winddegree",
+        "pk": 2,
+        "fields": {
+            "value_api": "Šiaurės",
+            "code": 0,
+            "description": "Северный"
+        }
+    },
+    {
+        "model": "api_scraper.winddegree",
+        "pk": 3,
+        "fields": {
+            "value_api": "Pietų",
+            "code": 180,
+            "description": "Южный"
+        }
+    },
+    {
+        "model": "api_scraper.winddegree",
+        "pk": 4,
+        "fields": {
+            "value_api": "Rytų",
+            "code": 90,
+            "description": "Восточный"
+        }
+    },
+    {
+        "model": "api_scraper.winddegree",
+        "pk": 5,
+        "fields": {
+            "value_api": "Vakarų",
+            "code": 270,
+            "description": "Западный"
+        }
+    },
+    {
+        "model": "api_scraper.winddegree",
+        "pk": 6,
+        "fields": {
+            "value_api": "Šiaurės vakarų",
+            "code": 315,
+            "description": "Северо-западный"
+        }
+    },
+    {
+        "model": "api_scraper.winddegree",
+        "pk": 7,
+        "fields": {
+            "value_api": "Šiaurės rytų",
+            "code": 45,
+            "description": "Северо-восточный"
+        }
+    },
+    {
+        "model": "api_scraper.winddegree",
+        "pk": 8,
+        "fields": {
+            "value_api": "Pietvakarių",
+            "code": 225,
+            "description": "Юго-западный"
+        }
+    },
+    {
+        "model": "api_scraper.winddegree",
+        "pk": 9,
+        "fields": {
+            "value_api": "Pietryčių",
+            "code": 135,
+            "description": "Юго-восточный"
+        }
+    }
+]

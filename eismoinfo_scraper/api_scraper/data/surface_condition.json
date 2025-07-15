@@ -1,0 +1,83 @@
+[
+    {
+        "model": "api_scraper.surfacecondition",
+        "pk": 1,
+        "fields": {
+            "value_api": "Sausa",
+            "code": 11,
+            "description": "Сухая дорога"
+        }
+    },
+    {
+        "model": "api_scraper.surfacecondition",
+        "pk": 2,
+        "fields": {
+            "value_api": "Šlapia",
+            "code": 51,
+            "description": "Роса"
+        }
+    },
+    {
+        "model": "api_scraper.surfacecondition",
+        "pk": 3,
+        "fields": {
+            "value_api": "Drėgna",
+            "code": 12,
+            "description": "Влажная дорога"
+        }
+    },
+    {
+        "model": "api_scraper.surfacecondition",
+        "pk": 4,
+        "fields": {
+            "value_api": "Klaida",
+            "code": 0,
+            "description": "Ошибка станции"
+        }
+    },
+    {
+        "model": "api_scraper.surfacecondition",
+        "pk": 5,
+        "fields": {
+            "value_api": "Pažliugęs sniegas",
+            "code": 13,
+            "description": "Немного воды и снега"
+        }
+    },
+    {
+        "model": "api_scraper.surfacecondition",
+        "pk": 6,
+        "fields": {
+            "value_api": "Sniegas",
+            "code": 14,
+            "description": "Снежный налет"
+        }
+    },
+    {
+        "model": "api_scraper.surfacecondition",
+        "pk": 7,
+        "fields": {
+            "value_api": "Ledas",
+            "code": 71,
+            "description": "Гололедица"
+        }
+    },
+    {
+        "model": "api_scraper.surfacecondition",
+        "pk": 8,
+        "fields": {
+            "value_api": "Šerkšnas",
+            "code": 52,
+            "description": "Иней"
+        }
+    },
+    {
+        "model": "api_scraper.surfacecondition",
+        "pk": 9,
+        "fields": {
+            "value_api": "Sniegas/Šerkšnas",
+            "code": 31,
+            "description": "Снег/лед"
+        }
+    }
+]

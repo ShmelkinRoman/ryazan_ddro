@@ -1,0 +1,392 @@
+[
+    {
+        "model": "api_scraper.precipitationtype",
+        "pk": 1,
+        "fields": {
+            "value_api": "Nėra (p. pask. val. krituliai)",
+            "code": 0,
+            "description": "None (precipitation past hour) / Развитие облачности не наблюдалось"
+        }
+    },
+    {
+        "model": "api_scraper.precipitationtype",
+        "pk": 2,
+        "fields": {
+            "value_api": "Nėra (p. pask. val. lietus)",
+            "code": 21,
+            "description": "None (rain past hour) / Дождь в последний час"
+        } 
+    },
+    {
+        "model": "api_scraper.precipitationtype",
+        "pk": 3,
+        "fields": {
+            "value_api": "Nėra (p. pask. val. dulksna)",
+            "code": 20,
+            "description": "None (drizzle past hour) / Морось в последний час"
+        } 
+    },
+    {
+        "model": "api_scraper.precipitationtype",
+        "pk": 4,
+        "fields": {
+            "value_api": "Nėra (p. pask. val. rūkas)",
+            "code": 28,
+            "description": "None (fog past hour) / Туман в последний час"
+        }
+    },
+    {
+        "model": "api_scraper.precipitationtype",
+        "pk": 5,
+        "fields": {
+            "value_api": "Rūkas",
+            "code": 40,
+            "description": "Fog / Туман в окрестностях станции"
+        } 
+    },
+    {
+        "model": "api_scraper.precipitationtype",
+        "pk": 6,
+        "fields": {
+            "value_api": "Rūkas arba ledo rūkas, nepasikeitė per paskutinę valandą",
+            "code": 44,
+            "description": "Fog or ice fog, no appreciable change during the past hour / Туман, без изменений в течение последнего часа, небо видно"
+        } 
+    },
+    {
+        "model": "api_scraper.precipitationtype",
+        "pk": 7,
+        "fields": {
+            "value_api": "Rūkas arba ledo rūkas, sumažėjo per paskutinę valandą",
+            "code": 42,
+            "description": "Fog or ice fog, has become thinner during the past hour / Туман, ослабел в течение последнего часа, небо видно"
+        }
+    },
+    {
+        "model": "api_scraper.precipitationtype",
+        "pk": 8,
+        "fields": {
+            "value_api": "Rūkas arba ledo rūkas, ruožais",
+            "code": 41,
+            "description": "Fog or ice fog, in patches / Туман клочьями в окрестностях станции"
+        }
+    },
+    {
+        "model": "api_scraper.precipitationtype",
+        "pk": 9,
+        "fields": {
+            "value_api": "Rūkas arba ledo rūkas, padidėjo per paskutinę valandą",
+            "code": 46,
+            "description": "Fog, or ice fog, has increased in the last hour / Туман, усилился в течение последнего часа, небо видно"
+        } 
+    },
+    {
+        "model": "api_scraper.precipitationtype",
+        "pk": 10,
+        "fields": {
+            "value_api": "Nėra",
+            "code": 0,
+            "description": "No precipitation / Развитие облачности не наблюдалось"
+        }
+    },
+    {
+        "model": "api_scraper.precipitationtype",
+        "pk": 11,
+        "fields": {
+            "value_api": "Liūtis, silpna",
+            "code": 80,
+            "description": "Downpour, light / Небольшой ливневый дождь"
+        }
+    },
+    {
+        "model": "api_scraper.precipitationtype",
+        "pk": 12,
+        "fields": {
+            "value_api": "Lietus, silpnas",
+            "code": 61,
+            "description": "Rain, light / Небольшой дождь"
+        }
+    },
+    {
+        "model": "api_scraper.precipitationtype",
+        "pk": 13,
+        "fields": {
+            "value_api": "Lietus, vidutinis",
+            "code": 63,
+            "description": "Rain, moderate / Умеренный дождь"
+        }
+    },
+    {
+        "model": "api_scraper.precipitationtype",
+        "pk": 14,
+        "fields": {
+            "value_api": "Lietus, stiprus",
+            "code": 65,
+            "description": "Rain, heavy / Сильный дождь"
+        }
+    },
+    {
+        "model": "api_scraper.precipitationtype",
+        "pk": 15,
+        "fields": {
+            "value_api": "Liūtis, vidutinė",
+            "code": 81,
+            "description": "Downpour moderate / Ливневый дождь"
+        } 
+    },
+    {
+        "model": "api_scraper.precipitationtype",
+        "pk": 16,
+        "fields": {
+            "value_api": "Dulksna, silpna",
+            "code": 51,
+            "description": "Drizzle, not freezing, light / Слабая морось непрерывная"
+        }
+    },
+    {
+        "model": "api_scraper.precipitationtype",
+        "pk": 17,
+        "fields": {
+            "value_api": "Dulksna, vidutinė",
+            "code": 53,
+            "description": "Drizzle, not freezing, moderate / Умеренная морось непрерывная"
+        } 
+    },
+    {
+        "model": "api_scraper.precipitationtype",
+        "pk": 18,
+        "fields": {
+            "value_api": "Dulksna stipri",
+            "code": 55,
+            "description": "Drizzle, not freezing, heavy / Сильная морось непрерывная"
+        } 
+    },
+    {
+        "model": "api_scraper.precipitationtype",
+        "pk": 19,
+        "fields": {
+            "value_api": "Dulksna ir lietus, silpnas",
+            "code": 61,
+            "description": "Mist and rain, weak / Небольшой дождь"
+        }
+    },
+    {
+        "model": "api_scraper.precipitationtype",
+        "pk": 20,
+        "fields": { 
+            "value_api": "Migla" , 
+            "code": 5,
+            "description": "Haze or smoke , or dust in suspension in the air , visibility <1 km / Мгла" 
+        }
+    },
+    { 
+        "model": "api_scraper.precipitationtype", 
+        "pk": 21, 
+        "fields": { 
+            "value_api": "Migla, dūmai arba dulkės, matomumas daugiau nei 1 km", 
+            "code": 5,
+            "description": "Haze or smoke, or dust in suspension in the air, visibility ≥1 km / Мгла"
+        }
+    }, 
+    { 
+        "model": "api_scraper.precipitationtype", 
+        "pk": 22,
+        "fields": { 
+            "value_api": "Nėra (p.pask.val.sniegas)", 
+            "code": 22,
+            "description": "None (snow past hour) / Снег в последний час" 
+        }
+    }, 
+    { 
+        "model": "api_scraper.precipitationtype", 
+        "pk": 23, 
+        "fields": { 
+            "value_api": "Snygis, silpnas", 
+            "code": 71,
+            "description": "Snow, light / Небольшой снег" 
+        }
+    },  
+    {  
+        "model": "api_scraper.precipitationtype",  
+        "pk": 24,  
+        "fields": {  
+            "value_api": "Snygis, vidutinis",  
+            "code": 73,
+            "description": "Snow, moderate / Умеренный снег"  
+        }
+    },  
+    {  
+        "model": "api_scraper.precipitationtype",   
+        "pk": 25,
+        "fields": {   
+            "value_api": "Snygis, stiprus",   
+            "code": 75,
+            "description": "Snow, heavy / Сильный снег"   
+        }
+    },  
+    {  
+        "model": "api_scraper.precipitationtype",   
+        "pk": 26,
+        "fields": {   
+            "value_api": "Šlapdriba, silpna",   
+            "code": 68,
+            "description": "Rain (or drizzle) and snow, light / Слабый дождь или слабая морось со снегом"   
+        }
+    },   
+    {   
+        "model": "api_scraper.precipitationtype",   
+        "pk": 27,
+        "fields": {    
+            "value_api": "Liūtis arba protarpiais krituliai",    
+            "code": 61,
+            "description": "Precipitation slight or moderate (raining now) / Небольшой дождь"
+        }
+    },
+    {   
+        "model": "api_scraper.precipitationtype",   
+        "pk": 28,
+        "fields": {    
+            "value_api": "Silpni arba vidutiniai krituliai",    
+            "code": 61,
+            "description": "Precipitation slight or moderate (raining now) / Небольшой дождь"   
+        }
+    },
+    {   
+        "model": "api_scraper.precipitationtype",   
+        "pk": 29,
+        "fields": {    
+            "value_api": "Krituliai",    
+            "code": 16,
+            "description": "Precipitation (now) / Осадки вблизи от станции"   
+        }
+    },
+    {   
+        "model": "api_scraper.precipitationtype",   
+        "pk": 30,
+        "fields": {    
+            "value_api": "Snygis, liūtinis silpnas",    
+            "code": 85,
+            "description": "Snow showers, light / Небольшой ливневый снег"   
+        }
+    },
+    {
+        "model": "api_scraper.precipitationtype",
+        "pk": 31,
+        "fields": {
+            "value_api": "Dulksna ir lietus, vidutinis",
+            "code": 69,
+            "description": "Drizzle or rain, moderate / Дождь или морось со снегом"
+        }
+    },
+    {
+        "model": "api_scraper.precipitationtype",
+        "pk": 32,
+        "fields": {
+            "value_api": "Dulksna, stipri",
+            "code": 55,
+            "description": "Drizzle, not freezing, heavy / Сильная морось"
+        }
+    },
+    {
+        "model": "api_scraper.precipitationtype",
+        "pk": 33,
+        "fields": {
+            "value_api": "Krituliai, silpni",
+            "code": 16,
+            "description": "Precipitation (now) / Осадки вблизи от станции"
+        }
+    },
+    {
+        "model": "api_scraper.precipitationtype",
+        "pk": 34,
+        "fields": {
+            "value_api": "Šlapdriba, stipri",
+            "code": 69,
+            "description": "Drizzle or rain, moderate / Дождь или морось со снегом"
+        }
+    },
+    {
+        "model": "api_scraper.precipitationtype",
+        "pk": 35,
+        "fields": {
+            "value_api": "Migla, dūmai arba dulkės, matomumas mažiau nei 1 km",
+            "code": 5,
+            "description": "Haze or smoke , or dust in suspension in the air , visibility <1 km / Мгла"
+        }
+    },
+    {
+        "model": "api_scraper.precipitationtype",
+        "pk": 36,
+        "fields": {
+            "value_api": "Lietus, užšąlantis, silpnas",
+            "code": 66,
+            "description": "Rain, freezing, light / Небольшой замерзающий дождь, гололед"
+        }
+    },
+    {
+        "model": "api_scraper.precipitationtype",
+        "pk": 37,
+        "fields": {
+            "value_api": "Dulksna, užšąlanti, silpna",
+            "code": 56,
+            "description": "Drizzle, freezing, light / Небольшая замерзающая морось, гололед"
+        }
+    },
+    {
+        "model": "api_scraper.precipitationtype",
+        "pk": 38,
+        "fields": {
+            "value_api": "Rūkas, šerkšnijantis",
+            "code": 49,
+            "description": "Fog, frost / Туман, изморозь"
+        }
+    },
+    {
+        "model": "api_scraper.precipitationtype",
+        "pk": 39,
+        "fields": {
+            "value_api": "Snygis, liūtinis stiprus",
+            "code": 86,
+            "description": "Snow, light downpour / Ливневый снег умеренный или сильный"
+        }
+    },
+    {
+        "model": "api_scraper.precipitationtype",
+        "pk": 40,
+        "fields": {
+            "value_api": "Snygis, liūtinis vidutinis",
+            "code": 86,
+            "description": "Snow, moderate downpour / Ливневый снег умеренный или сильный"
+        }
+    },
+    {
+        "model": "api_scraper.precipitationtype",
+        "pk": 41,
+        "fields": {
+            "value_api": "Ledo kapsulės, silpnas intens.",
+            "code": 76,
+            "description": "Ice pellets, low intensity / Ледяные иглы"
+        }
+    },
+    {
+        "model": "api_scraper.precipitationtype",
+        "pk": 42,
+        "fields": {
+            "value_api": "Krituliai, stiprūs",
+            "code": 16,
+            "description": "Precipitation, heavy / Осадки"
+        }
+    },
+    {
+        "model": "api_scraper.precipitationtype",
+        "pk": 43,
+        "fields": {
+            "value_api": "Liūtis, stipri",
+            "code": 82,
+            "description": "Downpour, heavy / Сильный ливневый дождь"
+        }
+    }
+]
+
+
+
