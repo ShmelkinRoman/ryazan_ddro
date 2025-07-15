@@ -42,15 +42,17 @@ ALLOWED_HOSTS = ['127.0.0.1', 'localhost', env('HARVESTER_SERVER_IP')]
 
 INSTALLED_APPS = [
     'webscraper.apps.WebscraperConfig',
+    'weatherdata_api.apps.WeatherdataApiConfig',
     'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',
     'django.contrib.sessions',
     'django.contrib.messages',
     'rest_framework',
+    'rest_framework.authtoken',
     'django_celery_beat',
     'django.contrib.staticfiles',
-    'django_prometheus' 
+    'django_prometheus'
 ]
 
 MIDDLEWARE = [
@@ -166,3 +168,16 @@ CORS_ALLOWED_ORIGINS = ['http://localhost', 'http://127.0.0.1', f'http://{env("H
 
 # Prometheus.
 PROMETHEUS_EXPORT_MIGRATIONS = True
+
+REST_FRAMEWORK = {
+    'DEFAULT_PERMISSION_CLASSES': [
+        'rest_framework.permissions.IsAuthenticated',
+    ],
+    'DEFAULT_AUTHENTICATION_CLASSES': [
+        'rest_framework.authentication.TokenAuthentication',
+    ]
+}
+
+SWAGGER_SETTINGS = {
+    'USE_SESSION_AUTH': False
+}
