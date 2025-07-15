@@ -42,6 +42,7 @@ ALLOWED_HOSTS = ['127.0.0.1', 'localhost', env('HARVESTER_SERVER_IP')]
 
 INSTALLED_APPS = [
     'webscraper.apps.WebscraperConfig',
+    'weatherdata_api.apps.WeatherdataApiConfig',
     'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',
