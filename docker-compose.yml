@@ -24,6 +24,7 @@ services:
 
   ddro-redis:
     image: redis:alpine
+    # build: .
     volumes:
       - ddro_redis_data:/data
     restart: unless-stopped
